@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIAPDOL - SISTEM APLIKASI PAJAK DAERAH ONLINE</title>
+        <meta charset="UTF-8">
+        <!-- SEO -->
+        <meta name="title" content="SIAPDOL - Sistem Aplikasi Pajak Daerah Online">
+        <meta name="abstract"
+            content="Sistem Aplikasi Pajak Daerah Online membantu anda dalam pengecekan Pembayaran PBB, Verifikasi BPHTB dan Informasi PAD Kabupaten Sumedang">
+        <meta name="description"
+            content=" Sistem Aplikasi Pajak Daerah Online membantu anda dalam pengecekan Pembayaran PBB, Verifikasi BPHTB dan Informasi PAD Kabupaten Sumedang ">
+        <meta name="keywords"
+            content="e-pbb sumedang ,siapdol, sistem aplikasi pajak daerah online, pajak daerah online, aplikasi pajak sumedang, aplikasi pajak daerah sumedang, cek pajak daerah sumedang">
+        <meta itemprop="name" content="SIAPDOL - SISTEM APLIKASI PAJAK DAERAH ONLINE">
+        <meta itemprop="description"
+            content="Sistem Aplikasi Pajak Daerah Online membantu anda dalam pengecekan Pembayaran PBB, Verifikasi BPHTB dan Informasi PAD Kabupaten Sumedang">
+        <meta itemprop="image" content="./public/assets/logo-siapdol.webp">
+        <meta property="og:url" content="https://siapdol.sumedangkab.go.id/siapdol">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="SIAPDOL - SISTEM APLIKASI PAJAK DAERAH ONLINE">
+        <meta property="og:description"
+            content="SIAPDOL - Sistem Aplikasi Pajak Daerah Online (SIAPDOL) membantu anda dalam pengecekan Pembayaran PBB, Verifikasi BPHTB ,dan Informasi PAD Kabupaten Sumedang">
+        <meta property="og:image" content="./public/assets/logo-siapdol.webp">
+        <meta property="og:image:alt" content="SIAPDOL - Sistem Aplikasi Pajak Daerah Online">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://siapdol.sumedangkab.go.id/siapdol/assets/favico/favicon-32x32.png">
+
+        <!-- tailwindCSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- font inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <main>
+        <section id="hero" class=" h-dvh my-12 lg:my-0 flex justify-center">
+            <div class="container flex flex-col-reverse lg:flex-row justify-center  lg:justify-between px-4 lg:px-0 ">
+                <div class="my-auto ext-center lg:text-left flex flex-col items-center lg:items-start ">
+                    <div class="">
+                        <h1 class="text-4xl text-center lg:text-start lg:text-6xl font-semibold text-primary-900 ">
+                            Temukan
+                            Informasi Pajak Anda</h1>
+                        <p class="text-xl text-center lg:text-start text font-medium text-gray-600 py-8 ">Portal
+                            Sistem
+                            Informasi Pajak Kab. Sumedang</p>
+                    </div>
+                    <!-- Form pencarian -->
+                    <form id="searchForm" class="relative">
+                        <div class="flex items-center w-full lg:w-4/5 gap-2 bg-gray-100 py-2 px-4 rounded-lg">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.5306 21.1258L16.8365 16.4327C18.1971 14.7993 18.8755 12.7043 18.7307 10.5834C18.5859 8.46254 17.629 6.47914 16.0591 5.04581C14.4892 3.61248 12.4271 2.83958 10.3019 2.88788C8.17663 2.93618 6.15181 3.80196 4.64864 5.30513C3.14547 6.8083 2.27968 8.83312 2.23138 10.9584C2.18308 13.0836 2.95599 15.1457 4.38932 16.7156C5.82265 18.2855 7.80604 19.2424 9.92691 19.3872C12.0478 19.532 14.1428 18.8536 15.7762 17.493L20.4693 22.1871C20.539 22.2568 20.6218 22.312 20.7128 22.3498C20.8038 22.3875 20.9014 22.4069 21 22.4069C21.0985 22.4069 21.1961 22.3875 21.2871 22.3498C21.3782 22.312 21.4609 22.2568 21.5306 22.1871C21.6003 22.1174 21.6556 22.0347 21.6933 21.9436C21.731 21.8526 21.7504 21.755 21.7504 21.6565C21.7504 21.5579 21.731 21.4603 21.6933 21.3693C21.6556 21.2782 21.6003 21.1955 21.5306 21.1258ZM3.74997 11.1565C3.74997 9.82144 4.14585 8.5164 4.88755 7.40636C5.62925 6.29633 6.68345 5.43117 7.91686 4.92028C9.15026 4.40939 10.5075 4.27571 11.8168 4.53616C13.1262 4.79661 14.3289 5.43949 15.2729 6.38349C16.2169 7.3275 16.8598 8.53023 17.1203 9.8396C17.3807 11.149 17.247 12.5062 16.7362 13.7396C16.2253 14.973 15.3601 16.0272 14.2501 16.7689C13.14 17.5106 11.835 17.9065 10.5 17.9065C8.71037 17.9045 6.99463 17.1927 5.72919 15.9272C4.46375 14.6618 3.75195 12.9461 3.74997 11.1565Z"
+                                    fill="#4B5563" />
+                            </svg>
+                            <input id="searchInput" type="text" class="w-full rounded-md text-gray-500 text-sm font-medium px-1 py-2 focus:outline-none
+                                transition duration-150 bg-gray-100" placeholder="Cari menu">
+                        </div>
+                        <!-- Hasil pencarian -->
+                        <div id="searchResults"
+                            class="absolute top-full left-0 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-50 hidden">
+                            <!-- Dummy data hasil pencarian -->
+                            <template id="searchTemplate" x-for="item in searchData" :key="item.id">
+                                <div class="p-4">
+                                    <template x-if="item.type === 'button'">
+                                        <a :href="item.link" class="text-blue-500 hover:underline"
+                                            :target="item.target">{{ item.title }}</a>
+                                    </template>
+                                    <template x-if="item.type === 'modal'">
+                                        <button @click="openModal(item.modalId, $event)"
+                                            class="text-blue-500 hover:underline">{{ item.title }}</button>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </form>
+
+                    <div class="flex pt-12">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 2.15649C6.71442 2.15649 5.45772 2.53771 4.3888 3.25194C3.31988 3.96617 2.48676 4.98133 1.99479 6.16905C1.50282 7.35677 1.37409 8.6637 1.6249 9.92458C1.8757 11.1855 2.49477 12.3436 3.40381 13.2527C4.31285 14.1617 5.47104 14.7808 6.73192 15.0316C7.99279 15.2824 9.29973 15.1537 10.4874 14.6617C11.6752 14.1697 12.6903 13.3366 13.4046 12.2677C14.1188 11.1988 14.5 9.94207 14.5 8.65649C14.4982 6.93315 13.8128 5.2809 12.5942 4.06231C11.3756 2.84372 9.72335 2.15831 8 2.15649ZM10.3538 9.51024L8.35375 11.5102C8.30732 11.5567 8.25217 11.5936 8.19147 11.6188C8.13077 11.6439 8.06571 11.6569 8 11.6569C7.9343 11.6569 7.86923 11.6439 7.80853 11.6188C7.74783 11.5936 7.69269 11.5567 7.64625 11.5102L5.64625 9.51024C5.55243 9.41642 5.49972 9.28918 5.49972 9.15649C5.49972 9.02381 5.55243 8.89656 5.64625 8.80274C5.74007 8.70892 5.86732 8.65622 6 8.65622C6.13268 8.65622 6.25993 8.70892 6.35375 8.80274L7.5 9.94962V6.15649C7.5 6.02389 7.55268 5.89671 7.64645 5.80294C7.74022 5.70917 7.86739 5.65649 8 5.65649C8.13261 5.65649 8.25979 5.70917 8.35356 5.80294C8.44732 5.89671 8.5 6.02389 8.5 6.15649V9.94962L9.64625 8.80274C9.74007 8.70892 9.86732 8.65622 10 8.65622C10.1327 8.65622 10.2599 8.70892 10.3538 8.80274C10.4476 8.89656 10.5003 9.02381 10.5003 9.15649C10.5003 9.28918 10.4476 9.41642 10.3538 9.51024Z"
+                                fill="#6B7280" />
+                        </svg>
+
+                        <p class="text-sm text-gray-500 ">Gulir untuk menjelajahi semua menu</p>
+                    </div>
+                </div>
+                <div class="lg:w-8/12 my-auto mx-auto lg:mx- lg:justify-self-end ">
+                    <img class="w-full " src="./assets/img/hero.svg " alt="hero ">
+                </div>
+            </div>
+        </section>
+        <section id="content" class="flex justify-center bg-primary-50">
+            <div class="container my-24 px-4 lg:px-0 gap-2 ">
+                <div class="flex flex-col items-center">
+                    <h1 class="text-3xl lg:text-5xl font-semibold text-primary-900 ">Informasi Pajak Yang Anda Cari</h1>
+                    <p class="text-lg font-medium text-primary-900 pt-2 ">Temukan menu pelaporan pajak yang Anda cari
+                    </p>
+                </div>
+                <!-- Start Content -->
+                <div class="flex flex-col gap-8 mt-6 xl:mt-16">
+                    <!-- row 1 -->
+                    <div
+                        class="flex px-6 py-8 justify-center items-start content-start self-stretch flex-wrap gap-x-5 gap-y-6 rounded-3xl bg-white sh">
+                        <button type="button" id="Ipbb" class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/pbb.svg" alt="" srcset="">
+                            <h2 class="card-title">Informasi PBB</h2>
+                        </button>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/hotel.svg" alt="" srcset="">
+                            <h2 class="card-title">PBJT-Perhotelan</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/hiburan.svg" alt="" srcset="">
+                            <h2 class="card-title">PBJT-Kesenian dan Hiburan</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/restoran.svg" alt="" srcset="">
+                            <h2 class="card-title">PBJT-Makanan dan Minuman</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/parkir.svg" alt="" srcset="">
+                            <h2 class="card-title">PBJT-Parkir</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/penerangan.svg" alt="" srcset="">
+                            <h2 class="card-title">Pajak Penerangan Umum</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/minerba.svg" alt="" srcset="">
+                            <h2 class="card-title">Pajak Minerba</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/reklame.svg" alt="" srcset="">
+                            <h2 class="card-title">Pajak Reklame</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/air-tanah.svg" alt="" srcset="">
+                            <h2 class="card-title">Pajak Air Tanah</h2>
+                        </a>
+                        <a href="https://sippadu.sumedangkab.go.id/wp"
+                            class="flex flex-col items-center gap-2 w-[214px]">
+                            <img src="./assets/img/sarang-walet.svg" alt="" srcset="">
+                            <h2 class="card-title">Pajak Sarang Walet</h2>
+                        </a>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="flex flex-col xl:flex-row gap-8">
+                        <div
+                            class="flex w-full xl:w-1/2 bg-white rounded-2xl flex-col justify-center items-start gap-4 self-stretch p-6 sh">
+                            <span class="flex flex-row text-3xl font-semibold"><svg width="33" height="33"
+                                    viewBox="0 0 33 33" fill="none">
+                                    <path opacity="0.5"
+                                        d="M10.16 2.97974H22.84C24.3853 2.97974 25.1573 2.97974 25.7813 3.19707C26.3697 3.40559 26.902 3.74695 27.337 4.19465C27.772 4.64234 28.0979 5.18429 28.2893 5.7784C28.5 6.42107 28.5 7.21574 28.5 8.8064V27.4784C28.5 28.6224 27.1867 29.2304 26.356 28.4704C26.123 28.2551 25.8173 28.1355 25.5 28.1355C25.1827 28.1355 24.877 28.2551 24.644 28.4704L24 29.0597C23.5917 29.4373 23.0561 29.647 22.5 29.647C21.9439 29.647 21.4083 29.4373 21 29.0597C20.5917 28.6822 20.0561 28.4725 19.5 28.4725C18.9439 28.4725 18.4083 28.6822 18 29.0597C17.5917 29.4373 17.0561 29.647 16.5 29.647C15.9439 29.647 15.4083 29.4373 15 29.0597C14.5917 28.6822 14.0561 28.4725 13.5 28.4725C12.9439 28.4725 12.4083 28.6822 12 29.0597C11.5917 29.4373 11.0561 29.647 10.5 29.647C9.94391 29.647 9.40828 29.4373 9 29.0597L8.356 28.4704C8.12295 28.2551 7.8173 28.1355 7.5 28.1355C7.1827 28.1355 6.87705 28.2551 6.644 28.4704C5.81333 29.2304 4.5 28.6224 4.5 27.4784V8.8064C4.5 7.21574 4.5 6.41974 4.71067 5.77974C5.11067 4.5624 6.03733 3.60774 7.21867 3.19707C7.84267 2.97974 8.61467 2.97974 10.16 2.97974Z"
+                                        fill="#005B32" />
+                                    <path
+                                        d="M9.83337 9.31299C9.56816 9.31299 9.3138 9.41834 9.12627 9.60588C8.93873 9.79342 8.83337 10.0478 8.83337 10.313C8.83337 10.5782 8.93873 10.8326 9.12627 11.0201C9.3138 11.2076 9.56816 11.313 9.83337 11.313H10.5C10.7653 11.313 11.0196 11.2076 11.2071 11.0201C11.3947 10.8326 11.5 10.5782 11.5 10.313C11.5 10.0478 11.3947 9.79342 11.2071 9.60588C11.0196 9.41834 10.7653 9.31299 10.5 9.31299H9.83337ZM14.5 9.31299C14.2348 9.31299 13.9805 9.41834 13.7929 9.60588C13.6054 9.79342 13.5 10.0478 13.5 10.313C13.5 10.5782 13.6054 10.8326 13.7929 11.0201C13.9805 11.2076 14.2348 11.313 14.5 11.313H23.1667C23.4319 11.313 23.6863 11.2076 23.8738 11.0201C24.0614 10.8326 24.1667 10.5782 24.1667 10.313C24.1667 10.0478 24.0614 9.79342 23.8738 9.60588C23.6863 9.41834 23.4319 9.31299 23.1667 9.31299H14.5ZM9.83337 13.9797C9.56816 13.9797 9.3138 14.085 9.12627 14.2725C8.93873 14.4601 8.83337 14.7144 8.83337 14.9797C8.83337 15.2449 8.93873 15.4992 9.12627 15.6868C9.3138 15.8743 9.56816 15.9797 9.83337 15.9797H10.5C10.7653 15.9797 11.0196 15.8743 11.2071 15.6868C11.3947 15.4992 11.5 15.2449 11.5 14.9797C11.5 14.7144 11.3947 14.4601 11.2071 14.2725C11.0196 14.085 10.7653 13.9797 10.5 13.9797H9.83337ZM14.5 13.9797C14.2348 13.9797 13.9805 14.085 13.7929 14.2725C13.6054 14.4601 13.5 14.7144 13.5 14.9797C13.5 15.2449 13.6054 15.4992 13.7929 15.6868C13.9805 15.8743 14.2348 15.9797 14.5 15.9797H23.1667C23.4319 15.9797 23.6863 15.8743 23.8738 15.6868C24.0614 15.4992 24.1667 15.2449 24.1667 14.9797C24.1667 14.7144 24.0614 14.4601 23.8738 14.2725C23.6863 14.085 23.4319 13.9797 23.1667 13.9797H14.5ZM9.83337 18.6463C9.56816 18.6463 9.3138 18.7517 9.12627 18.9392C8.93873 19.1268 8.83337 19.3811 8.83337 19.6463C8.83337 19.9115 8.93873 20.1659 9.12627 20.3534C9.3138 20.541 9.56816 20.6463 9.83337 20.6463H10.5C10.7653 20.6463 11.0196 20.541 11.2071 20.3534C11.3947 20.1659 11.5 19.9115 11.5 19.6463C11.5 19.3811 11.3947 19.1268 11.2071 18.9392C11.0196 18.7517 10.7653 18.6463 10.5 18.6463H9.83337ZM14.5 18.6463C14.2348 18.6463 13.9805 18.7517 13.7929 18.9392C13.6054 19.1268 13.5 19.3811 13.5 19.6463C13.5 19.9115 13.6054 20.1659 13.7929 20.3534C13.9805 20.541 14.2348 20.6463 14.5 20.6463H23.1667C23.4319 20.6463 23.6863 20.541 23.8738 20.3534C24.0614 20.1659 24.1667 19.9115 24.1667 19.6463C24.1667 19.3811 24.0614 19.1268 23.8738 18.9392C23.6863 18.7517 23.4319 18.6463 23.1667 18.6463H14.5Z"
+                                        fill="#005B32" />
+                                </svg>Pembayaran Pajak
+                            </span>
+                            <div class="flex flex-col gap-4">
+                                <a href="#" class="btn-primary"><svg width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_488_555)">
+                                            <path
+                                                d="M1.83337 11.48C1.83337 9.59465 1.83337 8.65131 2.41937 8.06598C3.00471 7.47998 3.94804 7.47998 5.83337 7.47998H11.1667C13.052 7.47998 13.9954 7.47998 14.5807 8.06598C15.1667 8.65131 15.1667 9.59465 15.1667 11.48C15.1667 13.3653 15.1667 14.3086 14.5807 14.894C13.9954 15.48 13.052 15.48 11.1667 15.48H5.83337C3.94804 15.48 3.00471 15.48 2.41937 14.894C1.83337 14.3086 1.83337 13.3653 1.83337 11.48Z"
+                                                stroke="white" stroke-width="1.5" />
+                                            <path
+                                                d="M4.5 7.47982V6.14648C4.5 5.08562 4.92143 4.0682 5.67157 3.31806C6.42172 2.56791 7.43913 2.14648 8.5 2.14648C9.56087 2.14648 10.5783 2.56791 11.3284 3.31806C12.0786 4.0682 12.5 5.08562 12.5 6.14648V7.47982"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                            <path d="M5.83337 11.48H5.83937M8.49404 11.48H8.50004M11.1607 11.48H11.1667"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_488_555">
+                                                <rect width="16" height="16" fill="white"
+                                                    transform="translate(0.5 0.812988)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Login Petugas BPHTB</a>
+                                <div class="flex items-start content-start gap-2 self-stretch flex-wrap">
+                                    <button onclick="openModal('Bpbb', event)" class="btn-secondaryl">
+                                        Bayar PBB <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.3538 9.16653L9.85375 13.6665C9.75993 13.7603 9.63268 13.8131 9.5 13.8131C9.36732 13.8131 9.24007 13.7603 9.14625 13.6665C9.05243 13.5727 8.99972 13.4455 8.99972 13.3128C8.99972 13.1801 9.05243 13.0528 9.14625 12.959L12.7931 9.31278H3C2.86739 9.31278 2.74021 9.2601 2.64645 9.16633C2.55268 9.07256 2.5 8.94539 2.5 8.81278C2.5 8.68017 2.55268 8.55299 2.64645 8.45922C2.74021 8.36546 2.86739 8.31278 3 8.31278H12.7931L9.14625 4.66653C9.05243 4.57271 8.99972 4.44546 8.99972 4.31278C8.99972 4.1801 9.05243 4.05285 9.14625 3.95903C9.24007 3.86521 9.36732 3.8125 9.5 3.8125C9.63268 3.8125 9.75993 3.86521 9.85375 3.95903L14.3538 8.45903C14.4002 8.50546 14.4371 8.56061 14.4623 8.62131C14.4874 8.68201 14.5004 8.74707 14.5004 8.81278C14.5004 8.87849 14.4874 8.94355 14.4623 9.00425C14.4371 9.06495 14.4002 9.12009 14.3538 9.16653Z"
+                                                fill="#004626" />
+                                        </svg>
+                                    </button>
+                                    <button onclick="openModal('Bbphtb', event)" class="btn-secondaryl">
+                                        Bayar BPHTB <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.3538 9.16653L9.85375 13.6665C9.75993 13.7603 9.63268 13.8131 9.5 13.8131C9.36732 13.8131 9.24007 13.7603 9.14625 13.6665C9.05243 13.5727 8.99972 13.4455 8.99972 13.3128C8.99972 13.1801 9.05243 13.0528 9.14625 12.959L12.7931 9.31278H3C2.86739 9.31278 2.74021 9.2601 2.64645 9.16633C2.55268 9.07256 2.5 8.94539 2.5 8.81278C2.5 8.68017 2.55268 8.55299 2.64645 8.45922C2.74021 8.36546 2.86739 8.31278 3 8.31278H12.7931L9.14625 4.66653C9.05243 4.57271 8.99972 4.44546 8.99972 4.31278C8.99972 4.1801 9.05243 4.05285 9.14625 3.95903C9.24007 3.86521 9.36732 3.8125 9.5 3.8125C9.63268 3.8125 9.75993 3.86521 9.85375 3.95903L14.3538 8.45903C14.4002 8.50546 14.4371 8.56061 14.4623 8.62131C14.4874 8.68201 14.5004 8.74707 14.5004 8.81278C14.5004 8.87849 14.4874 8.94355 14.4623 9.00425C14.4371 9.06495 14.4002 9.12009 14.3538 9.16653Z"
+                                                fill="#004626" />
+                                        </svg>
+                                    </button>
+                                    <button onclick="openModal('Bpjdl', event)" class="btn-secondaryl">
+                                        Bayar PJDL <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.3538 9.16653L9.85375 13.6665C9.75993 13.7603 9.63268 13.8131 9.5 13.8131C9.36732 13.8131 9.24007 13.7603 9.14625 13.6665C9.05243 13.5727 8.99972 13.4455 8.99972 13.3128C8.99972 13.1801 9.05243 13.0528 9.14625 12.959L12.7931 9.31278H3C2.86739 9.31278 2.74021 9.2601 2.64645 9.16633C2.55268 9.07256 2.5 8.94539 2.5 8.81278C2.5 8.68017 2.55268 8.55299 2.64645 8.45922C2.74021 8.36546 2.86739 8.31278 3 8.31278H12.7931L9.14625 4.66653C9.05243 4.57271 8.99972 4.44546 8.99972 4.31278C8.99972 4.1801 9.05243 4.05285 9.14625 3.95903C9.24007 3.86521 9.36732 3.8125 9.5 3.8125C9.63268 3.8125 9.75993 3.86521 9.85375 3.95903L14.3538 8.45903C14.4002 8.50546 14.4371 8.56061 14.4623 8.62131C14.4874 8.68201 14.5004 8.74707 14.5004 8.81278C14.5004 8.87849 14.4874 8.94355 14.4623 9.00425C14.4371 9.06495 14.4002 9.12009 14.3538 9.16653Z"
+                                                fill="#004626" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full xl:w-1/2 gap-5">
+                            <div
+                                class="flex w-full  bg-white rounded-2xl flex-col xl:flex-row justify-between lg:items-center gap-4 self-stretch p-6 sh">
+                                <div class="flex flex-col">
+                                    <span class="flex flex-row text-3xl font-semibold gap-2">
+                                        <img src="./assets/img/tapping-box.png" alt="" srcset="">
+                                        Tapping Box
+                                    </span>
+                                    <p class="text-sm font-medium text-gray-600">Lihat data realtime tapping box</p>
+                                </div>
+                                <a href="https://tappingbox.sumedangkab.go.id/" target="_blank"
+                                    class="btn-secondary">Lihat <svg width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3538 9.16677L9.85375 13.6668C9.75993 13.7606 9.63268 13.8133 9.5 13.8133C9.36732 13.8133 9.24007 13.7606 9.14625 13.6668C9.05243 13.573 8.99972 13.4457 8.99972 13.313C8.99972 13.1803 9.05243 13.0531 9.14625 12.9593L12.7931 9.31302H3C2.86739 9.31302 2.74021 9.26034 2.64645 9.16658C2.55268 9.07281 2.5 8.94563 2.5 8.81302C2.5 8.68041 2.55268 8.55324 2.64645 8.45947C2.74021 8.3657 2.86739 8.31302 3 8.31302H12.7931L9.14625 4.66677C9.05243 4.57295 8.99972 4.4457 8.99972 4.31302C8.99972 4.18034 9.05243 4.05309 9.14625 3.95927C9.24007 3.86545 9.36732 3.81274 9.5 3.81274C9.63268 3.81274 9.75993 3.86545 9.85375 3.95927L14.3538 8.45927C14.4002 8.50571 14.4371 8.56085 14.4623 8.62155C14.4874 8.68225 14.5004 8.74731 14.5004 8.81302C14.5004 8.87873 14.4874 8.94379 14.4623 9.00449C14.4371 9.06519 14.4002 9.12034 14.3538 9.16677Z"
+                                            fill="#004626" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="flex w-full bg-white rounded-2xl flex-col xl:flex-row justify-between
+                                lg:items-center gap-4 self-stretch p-6 sh">
+                                <div class="flex flex-col">
+                                    <span class="flex flex-row text-3xl font-semibold gap-2">
+                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M26.5 5.31299V26.313H19.5V5.31299H26.5Z"
+                                                fill="#005B32" />
+                                            <path
+                                                d="M28.5 25.313H27.5V5.31299C27.5 5.04777 27.3946 4.79342 27.2071 4.60588C27.0196 4.41835 26.7652 4.31299 26.5 4.31299H19.5C19.2348 4.31299 18.9804 4.41835 18.7929 4.60588C18.6054 4.79342 18.5 5.04777 18.5 5.31299V10.313H12.5C12.2348 10.313 11.9804 10.4183 11.7929 10.6059C11.6054 10.7934 11.5 11.0478 11.5 11.313V16.313H6.5C6.23478 16.313 5.98043 16.4183 5.79289 16.6059C5.60536 16.7934 5.5 17.0478 5.5 17.313V25.313H4.5C4.23478 25.313 3.98043 25.4183 3.79289 25.6059C3.60536 25.7934 3.5 26.0478 3.5 26.313C3.5 26.5782 3.60536 26.8326 3.79289 27.0201C3.98043 27.2076 4.23478 27.313 4.5 27.313H28.5C28.7652 27.313 29.0196 27.2076 29.2071 27.0201C29.3946 26.8326 29.5 26.5782 29.5 26.313C29.5 26.0478 29.3946 25.7934 29.2071 25.6059C29.0196 25.4183 28.7652 25.313 28.5 25.313ZM20.5 6.31299H25.5V25.313H20.5V6.31299ZM13.5 12.313H18.5V25.313H13.5V12.313ZM7.5 18.313H11.5V25.313H7.5V18.313Z"
+                                                fill="#005B32" />
+                                        </svg>
+                                        Realisasi PAD
+                                    </span>
+                                    <p class="text-sm font-medium text-gray-600">Lihat realisai semua pajak</p>
+                                </div>
+                                <a href="https://siapdol.sumedangkab.go.id/siapdol/dashboard/v2" class="
+                                    btn-secondary">Lihat <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.3538 9.16677L9.85375 13.6668C9.75993 13.7606 9.63268 13.8133 9.5 13.8133C9.36732 13.8133 9.24007 13.7606 9.14625 13.6668C9.05243 13.573 8.99972 13.4457 8.99972 13.313C8.99972 13.1803 9.05243 13.0531 9.14625 12.9593L12.7931 9.31302H3C2.86739 9.31302 2.74021 9.26034 2.64645 9.16658C2.55268 9.07281 2.5 8.94563 2.5 8.81302C2.5 8.68041 2.55268 8.55324 2.64645 8.45947C2.74021 8.3657 2.86739 8.31302 3 8.31302H12.7931L9.14625 4.66677C9.05243 4.57295 8.99972 4.4457 8.99972 4.31302C8.99972 4.18034 9.05243 4.05309 9.14625 3.95927C9.24007 3.86545 9.36732 3.81274 9.5 3.81274C9.63268 3.81274 9.75993 3.86545 9.85375 3.95927L14.3538 8.45927C14.4002 8.50571 14.4371 8.56085 14.4623 8.62155C14.4874 8.68225 14.5004 8.74731 14.5004 8.81302C14.5004 8.87873 14.4874 8.94379 14.4623 9.00449C14.4371 9.06519 14.4002 9.12034 14.3538 9.16677Z"
+                                            fill="#004626" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="flex justify-center bg-primary-50 ">
+            <div class="container pb-16 px-4 lg:px-0 gap-2 ">
+                <div class="flex flex-wrap lg:flex-nowrap rounded-2xl bg-cream sh justify-between px-12 ">
+                    <div class="flex flex-col my-auto ">
+                        <h5 class="text-3xl font-semibold text-primary-900 mt-8 lg:mt-0 ">Sampaikan Aspirasi dan
+                            <br> Pengaduan Anda</h5>
+                        <p class="text-sm font-medium text-gray-500 mt-4 ">Mari berkontribusi untuk indonesia yang
+                            lebih baik!</p>
+                        <div class="bg-red-700 rounded-lg flex w-36 items-center mt-6 ">
+                            <a href="https://www.lapor.go.id/" target="_blank" class="my-2 mx-auto "><img
+                                    src="./assets/img/lapor.png" alt=" "></a>
+                        </div>
+                    </div>
+                    <div class="col mt-8 flex mx-auto lg:mx-0 ">
+                        <img class=" " src="./assets/img/cta-lapor.png " alt=" ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MODAL -->
+        <!-- Modal Cek Tagihan PBB -->
+        <div id="CTpbb" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Cek Tagihan PBB</h3>
+                    <button onclick="closeModal('CTpbb')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Nomor Objek Pajak
+                            (NOP)</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none inputMask"
+                            type="text " id="nop " name="nop" placeholder="Masukan Nomor Objek Pajak (NOP) " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="captcha ">Captcha</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text "
+                            id="captcha " name="captcha" placeholder="Masukan Captcha " required>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <img src="./assets/img/captcha.png " alt="">
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Modal Cetak SPPT -->
+        <div id="Csppt" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Cetak SPPT</h3>
+                    <button onclick="closeModal('Csppt')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="nama ">Nama Lengkap</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text"
+                            id="nama " name="nama " placeholder="Masukan Nama Lengkap " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="nik">NIK</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="nik " name="nik" placeholder="NIK " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Nomor Objek Pajak
+                            (NOP)</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none inputMask"
+                            type="text " id="nop " name="nop" placeholder="Masukan Nomor Objek Pajak (NOP) " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="captcha ">Captcha</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text "
+                            id="captcha " name="captcha" placeholder="Masukan Captcha " required>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <img src="./assets/img/captcha.png " alt="">
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Modal Informasi PBB -->
+        <div id="IpbbModal"
+            class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Menu Informasi PBB</h3>
+                    <button id="cIpbb" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div
+                    class="flex px-6 py-8 justify-center items-start content-start self-stretch flex-wrap gap-x-5 gap-y-6 rounded-3xl bg-white sh">
+                    <button type="button" onclick="openModal('Bpbb', event)"
+                        class=" flex flex-col items-center gap-2 w-[214px]">
+                        <img src="./assets/img/pbb.svg" alt="" srcset="">
+                        <h2 class="card-title">Cek Tagihan PBB</h2>
+                    </button>
+                    <button type="button" id="BtnIpbb" class="flex flex-col items-center gap-2 w-[214px]">
+                        <img src="./assets/img/pbb.svg" alt="" srcset="">
+                        <h2 class="card-title">Informasi PBB</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Cetak Salinan SPPT -->
+        <div id="CSsppt" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Cetak Salinan SPPT</h3>
+                    <button onclick="closeModal('CSsppt')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="nama ">Nama Lengkap</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text"
+                            id="nama " name="nama " placeholder="Masukan Nama Lengkap " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="nik">NIK</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="nik " name="nik" placeholder="NIK " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Nomor Objek Pajak
+                            (NOP)</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none inputMask"
+                            type="text " id="nop " name="nop" placeholder="Masukan Nomor Objek Pajak (NOP) " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="tahun ">Tahun</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="tahun " name="kode-bayar " placeholder="Tahun " required>
+                    </div>
+                    <div class="">
+                        <h6 class="text-sm font-semibold text-gray-800">Keperluan Salinan</h6>
+                        <div class="mt-2 flex gap-2">
+                            <label for="option1" class="flex items-center">
+                                <input type="radio" id="option1" name="options"
+                                    class="h-5 w-5 text-primary-600 focus:!ring-primary-600 checked:!bg-primary-600">
+                                <span class="ml-2 text-gray-800">Hilang</span>
+                            </label>
+
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" id="option2" name="options" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600">
+                                <span class="ml-2 text-gray-800">Rusak</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="keterangan ">Keterangan</label><br>
+                        <textarea class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none "
+                            name="keterangan " id="keterangan " cols="5 " rows="3 "
+                            placeholder="Masukan Keterangan "></textarea>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="captcha ">Captcha</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text "
+                            id="captcha " name="captcha" placeholder="Masukan Captcha " required>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <img src="./assets/img/captcha.png " alt="">
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Modal Login PBB -->
+        <div id="Lpbb" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Login Petugas PBB</h3>
+                    <button onclick="closeModal('Lpbb')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="username">Username</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="text"
+                            id="username " name="username " placeholder="Masukan Username " required>
+                    </div>
+                    <div class="flex gap-1 bg-gray-50 px-3 py-2 mt-2 rounded-md justify-between">
+                        <input class=" w-full bg-gray-50 focus:outline-none " type="password" id="password"
+                            name="password" placeholder="Masukan Password " required>
+                        <span id="togglePasswordButton" onclick="togglePasswordVisibility()"
+                            class="flex items-center justify-center">
+                            <svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-500 fill-current">
+                                <path id="eyeIcon"
+                                    d="M19.3211 9.74688C19.2937 9.68516 18.632 8.21719 17.1609 6.74609C15.2008 4.78594 12.725 3.75 9.99999 3.75C7.27499 3.75 4.79921 4.78594 2.83905 6.74609C1.36796 8.21719 0.703118 9.6875 0.678899 9.74688C0.643362 9.82681 0.625 9.91331 0.625 10.0008C0.625 10.0883 0.643362 10.1748 0.678899 10.2547C0.706243 10.3164 1.36796 11.7836 2.83905 13.2547C4.79921 15.2141 7.27499 16.25 9.99999 16.25C12.725 16.25 15.2008 15.2141 17.1609 13.2547C18.632 11.7836 19.2937 10.3164 19.3211 10.2547C19.3566 10.1748 19.375 10.0883 19.375 10.0008C19.375 9.91331 19.3566 9.82681 19.3211 9.74688ZM9.99999 15C7.5953 15 5.49452 14.1258 3.75546 12.4023C3.0419 11.6927 2.43483 10.8836 1.95312 10C2.4347 9.11636 3.04179 8.30717 3.75546 7.59766C5.49452 5.87422 7.5953 5 9.99999 5C12.4047 5 14.5055 5.87422 16.2445 7.59766C16.9595 8.307 17.5679 9.11619 18.0508 10C17.4875 11.0516 15.0336 15 9.99999 15ZM9.99999 6.25C9.25831 6.25 8.53329 6.46993 7.9166 6.88199C7.29992 7.29404 6.81927 7.87971 6.53544 8.56494C6.25162 9.25016 6.17735 10.0042 6.32205 10.7316C6.46674 11.459 6.82389 12.1272 7.34834 12.6517C7.87279 13.1761 8.54097 13.5333 9.2684 13.6779C9.99583 13.8226 10.7498 13.7484 11.4351 13.4645C12.1203 13.1807 12.7059 12.7001 13.118 12.0834C13.5301 11.4667 13.75 10.7417 13.75 10C13.749 9.00576 13.3535 8.05253 12.6505 7.34949C11.9475 6.64645 10.9942 6.25103 9.99999 6.25ZM9.99999 12.5C9.50554 12.5 9.02219 12.3534 8.61107 12.0787C8.19994 11.804 7.87951 11.4135 7.69029 10.9567C7.50107 10.4999 7.45157 9.99723 7.54803 9.51227C7.64449 9.02732 7.88259 8.58186 8.23222 8.23223C8.58186 7.8826 9.02731 7.6445 9.51227 7.54804C9.99722 7.45157 10.4999 7.50108 10.9567 7.6903C11.4135 7.87952 11.804 8.19995 12.0787 8.61107C12.3534 9.0222 12.5 9.50555 12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 9.99999 12.5Z" />
+                            </svg>
+                        </span>
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">LOGIN</button>
+            </div>
+        </div>
+        <!-- Modal Pembayaran PBB -->
+        <div id="Bpbb" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Cetak Pembayaran PBB</h3>
+                    <button onclick="closeModal('Bpbb')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Nomor Objek Pajak
+                            (NOP)</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none inputMask"
+                            type="text " id="nop " name="nop" placeholder="Masukan Nomor Objek Pajak (NOP) " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="tahun ">Tahun</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="tahun " name="kode-bayar " placeholder="Tahun " required>
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Modal Pembayaran BPHTB -->
+        <div id="Bbphtb" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Pembayaran BPHTB</h3>
+                    <button onclick="closeModal('Bbphtb')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Nomor Objek Pajak
+                            (NOP)</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none inputMask"
+                            type="text " id="nop " name="nop" placeholder="Masukan Nomor Objek Pajak (NOP) " required>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Kode
+                            Bayar</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="kode-bayar " name="kode-bayar " placeholder="Masukan Kode Bayar " required>
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Modal Bayar PJDL -->
+        <div id="Bpjdl" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Bayar PJDL</h3>
+                    <button onclick="closeModal('Bpjdl')" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" action=" ">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-800 " for="kode-bayar ">Kode
+                            Bayar</label><br>
+                        <input class="px-3 py-2 mt-2 w-full bg-gray-50 rounded-md focus:outline-none " type="number"
+                            id="kode-bayar " name="kode-bayar " placeholder="Masukan Kode Bayar " required>
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="flex justify-center bg-primary-900 ">
+                <div class="container text-center pt-20 pb-12 ">
+                    <div class="flex justify-center ">
+                        <img class=" " src="./assets/img/logo-footer.png " alt="logo siapdol kabupaten sumedang">
+                    </div>
+                    <div class=" " style="padding-top: 24px; color: white; ">
+                        <p>© 2024 - Sistem Aplikasi Pajak Daerah Online Kab. Sumedang</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- Pencarian & Modal -->
+    <script>
+        // Data Pencarian
+        const data = [{
+                id: 1,
+                title: 'Cek Tagihan PBB',
+                modalId: 'CTpbb',
+                type: 'modal'
+            },
+            {
+                id: 2,
+                title: 'Cetak SPPT',
+                modalId: 'Csppt',
+                type: 'modal'
+            },
+            {
+                id: 3,
+                title: 'Cetak Salinan SPPT',
+                modalId: 'CSsppt',
+                type: 'modal'
+            },
+            {
+                id: 4,
+                title: 'Login Petugas PBB',
+                modalId: 'Lpbb',
+                type: 'modal'
+            },
+            {
+                id: 5,
+                title: 'Login Petugas BPHTB',
+                link: 'https://bphtb.sumedangkab.go.id/',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 5,
+                title: 'PBJT-Perhotelan',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 6,
+                title: 'PBJT-Kesenian dan Hiburan',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 7,
+                title: 'PBJT-Makanan dan Minuman',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 8,
+                title: 'PBJT-Parkir',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 9,
+                title: 'Pajak Penerangan Umum',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 10,
+                title: 'Pajak Minerba',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 11,
+                title: 'Pajak Reklame',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 12,
+                title: 'Pajak Air Tanah',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 13,
+                title: 'Pajak Sarang Walet',
+                link: 'https://sippadu.sumedangkab.go.id/wp',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 14,
+                title: 'Bayar PBB',
+                modalId: 'Bpbb',
+                type: 'modal'
+            },
+            {
+                id: 15,
+                title: 'Bayar BPHTB',
+                modalId: 'Bbphtb',
+                type: 'modal'
+            },
+            {
+                id: 16,
+                title: 'Bayar PJDL',
+                modalId: 'Bpjdl',
+                type: 'modal'
+            },
+            {
+                id: 17,
+                title: 'Taping Box',
+                link: 'https://tappingbox.sumedangkab.go.id/',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 18,
+                title: 'Realisasi PAD',
+                link: 'https://siapdol.sumedangkab.go.id/siapdol/dashboard/v2',
+                target: '_blank',
+                type: 'button'
+            },
+            {
+                id: 19,
+                title: 'Aspirasi & Pengaduan (LAPOR)',
+                link: 'https://www.lapor.go.id/',
+                target: '_blank',
+                type: 'button'
+            },
+        ];
+
+        // JavaScript untuk menangani pencarian otomatis
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        // Fungsi untuk mencari data berdasarkan input pengguna
+        function search(query) {
+            return data.filter(item =>
+                item.title.toLowerCase().includes(query.toLowerCase())
+            );
+        }
+
+        // Fungsi untuk mengatur hasil pencarian
+        function updateResults(results) {
+            const searchResultsDiv = document.getElementById('searchResults');
+            searchResultsDiv.innerHTML = '';
+
+            results.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('p-4');
+
+                if (item.type === 'button') {
+                    const link = document.createElement('a');
+                    link.href = item.link;
+                    link.target = item.target;
+                    link.classList.add('text-blue-500', 'hover:underline');
+                    link.textContent = item.title;
+                    div.appendChild(link);
+                } else if (item.type === 'modal') {
+                    const button = document.createElement('button');
+                    button.classList.add('text-blue-500', 'hover:underline');
+                    button.textContent = item.title;
+                    button.addEventListener('click', (event) => openModal(item.modalId,
+                        event));
+                    // Pass event to openModal function
+                    div.appendChild(button);
+                }
+
+                searchResultsDiv.appendChild(div);
+            });
+        }
+
+        // Fungsi untuk membuka modal
+        function openModal(modalId, event) {
+            event.preventDefault(); // Prevent default action (e.g., redirecting)
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+        }
+
+        // Event listener untuk input pencarian
+        searchInput.addEventListener('input', function () {
+            const query = this.value.trim();
+            const results = search(query);
+            updateResults(results);
+            if (query.length > 0) {
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.classList.add('hidden');
+            }
+        });
+    </script>
+    <!-- Input Mask -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.inputMask').on('input', function () {
+                var val = this.value.replace(/\D/g, '');
+                var newVal = '';
+
+                if (val.length > 0) {
+                    newVal += val.substr(0, 2);
+                }
+                if (val.length > 2) {
+                    newVal += '.' + val.substr(2, 2);
+                }
+                if (val.length > 4) {
+                    newVal += '.' + val.substr(4, 3);
+                }
+                if (val.length > 7) {
+                    newVal += '.' + val.substr(7, 3);
+                }
+                if (val.length > 10) {
+                    newVal += '.' + val.substr(10, 3);
+                }
+                if (val.length > 13) {
+                    newVal += '.' + val.substr(13, 4);
+                }
+                if (val.length > 17) {
+                    newVal += '.' + val.substr(17, 1);
+                }
+
+                this.value = newVal;
+            });
+        });
+    </script>
+    <!-- Show Hide Password -->
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password");
+            const eyeIcon = document.getElementById("eyeIcon");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.setAttribute("fill", "#00a65a"); // Mengubah warna ikon menjadi hijau
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.setAttribute("fill", "#6B7280"); // Mengembalikan warna ikon ke abu-abu
+            }
+        }
+    </script>
+    <!--Modal Informasi PBB -->
+    <script>
+        // Mengambil elemen-elemen modal dan tombol
+        const openModalBtn = document.getElementById('Ipbb');
+        const closeModalBtn = document.getElementById('cIpbb');
+        const modal = document.getElementById('IpbbModal');
+
+        // Menambahkan event listener untuk membuka modal
+        openModalBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        // Menambahkan event listener untuk menutup modal
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
