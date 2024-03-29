@@ -363,7 +363,7 @@
         </div>
         <!-- Modal Informasi PBB -->
         <div id="IpbbModal"
-            class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+            class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-20">
             <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
                 <div class="flex items-start justify-between">
                     <h3 class="text-xl font-semibold text-primary-800">Menu Informasi PBB</h3>
@@ -376,15 +376,26 @@
                     </button>
                 </div>
                 <div
-                    class="flex px-6 py-8 justify-center items-start content-start self-stretch flex-wrap gap-x-5 gap-y-6 rounded-3xl bg-white sh">
-                    <button type="button" onclick="openModal('Bpbb', event)"
-                        class=" flex flex-col items-center gap-2 w-[214px]">
-                        <img src="./assets/img/pbb.svg" alt="" srcset="">
+                    class="flex py-6 justify-center items-start content-start self-stretch flex-wrap gap-x-5 gap-y-6 rounded-3xl">
+                    <button type="button" onclick="openModal('CTpbb', event)"
+                        class="flex flex-col items-center gap-2 w-1/4 md:w-[214px]">
+                        <img src="./assets/img/tagihan-pbb.svg" alt="cek tagihan pbb kabupaten sumedang">
                         <h2 class="card-title">Cek Tagihan PBB</h2>
                     </button>
-                    <button type="button" id="BtnIpbb" class="flex flex-col items-center gap-2 w-[214px]">
-                        <img src="./assets/img/pbb.svg" alt="" srcset="">
-                        <h2 class="card-title">Informasi PBB</h2>
+                    <button type="button" onclick="openModal('Csppt', event)"
+                        class="flex flex-col items-center gap-2 w-1/4 md:w-[214px]">
+                        <img src="./assets/img/cetak-sppt.svg" alt="cetak sppt kabupaten sumedang">
+                        <h2 class="card-title">Cetak SPPT</h2>
+                    </button>
+                    <button type="button" onclick="openModal('CSsppt', event)"
+                        class="flex flex-col items-center gap-2 w-1/4 md:w-[214px]">
+                        <img src="./assets/img/cetak-salinan-sppt.svg" alt="cetak salinan sppt kabupaten sumedang">
+                        <h2 class="card-title">Cetak Salinan SPPT</h2>
+                    </button>
+                    <button type="button" onclick="openModal('Lpbb', event)"
+                        class="flex flex-col items-center gap-2 w-1/4 md:w-[214px]">
+                        <img src="./assets/img/login.svg" alt="login petugas pbb kabupaten sumedang">
+                        <h2 class="card-title">Login Petugas PBB</h2>
                     </button>
                 </div>
             </div>
