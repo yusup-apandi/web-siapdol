@@ -15,16 +15,16 @@
     box-shadow: 13px 12px 12px 0px rgba(60, 61, 60, 0.10);
     }
     .btn-primary{
-        @apply inline-flex py-2 gap-2 px-4 bg-primary-500 text-sm font-semibold text-white rounded-lg w-fit justify-center items-center;
+        @apply inline-flex py-2 gap-2 px-4 bg-primary-500 text-sm font-semibold text-white rounded-lg w-fit justify-center items-center hover:bg-primary-800;
     }
     .btn-secondary{
-        @apply inline-flex py-2 px-4 gap-2 bg-primary-50 text-sm font-semibold text-primary-900 rounded-lg justify-center items-center;
+        @apply inline-flex py-2 px-4 gap-2 bg-primary-50 text-sm font-semibold text-primary-900 rounded-lg justify-center items-center hover:bg-primary-500 hover:text-white;
     }
     .btn-secondaryl{
-        @apply inline-flex py-4 px-5 gap-2 bg-primary-50 text-base font-semibold text-primary-900 rounded-lg justify-center items-center;
+        @apply inline-flex py-4 px-5 gap-2 bg-primary-50 text-base font-semibold text-primary-900 rounded-lg justify-center items-center hover:bg-primary-500 hover:text-white;
     }
     .card-title{
-        @apply text-xl font-medium text-primary-900 text-center;
+        @apply text-xs md:text-lg font-medium text-primary-900 text-center;
     }
   
 }
