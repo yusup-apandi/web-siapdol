@@ -777,6 +777,10 @@ html {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }
@@ -797,27 +801,6 @@ html {
   height: 100dvh;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-44 {
-  height: 11rem;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
 .max-h-72 {
   max-height: 18rem;
 }
@@ -826,8 +809,8 @@ html {
   max-height: 160px;
 }
 
-.max-h-32 {
-  max-height: 8rem;
+.w-1\/3 {
+  width: 33.333333%;
 }
 
 .w-1\/4 {
@@ -858,39 +841,6 @@ html {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.max-w-96 {
-  max-width: 24rem;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -909,10 +859,6 @@ html {
 
 .content-start {
   align-content: flex-start;
-}
-
-.content-between {
-  align-content: space-between;
 }
 
 .items-start {
@@ -1108,16 +1054,16 @@ html {
   padding-bottom: 4rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1147,6 +1093,11 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-medium {
@@ -1302,10 +1253,6 @@ html {
     align-items: center;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -1345,10 +1292,6 @@ html {
 
   .xl\:w-1\/2 {
     width: 50%;
-  }
-
-  .xl\:w-2\/5 {
-    width: 40%;
   }
 
   .xl\:flex-row {

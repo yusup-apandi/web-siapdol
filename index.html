@@ -202,6 +202,13 @@
                                             d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06"
                                             clip-rule="evenodd" /></svg>
                                 </button>
+                                <button onclick="openModal('SurveyModal', event)" class="btn-secondaryl">
+                                    Kuesioner <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M13.47 5.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H4a.75.75 0 0 1 0-1.5h14.19l-4.72-4.72a.75.75 0 0 1 0-1.06"
+                                            clip-rule="evenodd" /></svg>
+                                </button>
                             </div>
                         </div>
                         <div class="flex flex-col w-full xl:w-1/2 gap-5">
@@ -343,6 +350,125 @@
                     </div>
                 </form>
                 <button class="btn-primary w-full" type="submit">Cari Data</button>
+            </div>
+        </div>
+        <!-- Survei Kepuasan SIAPDOL  -->
+        <div id="SurveyModal"
+            class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-20">
+            <div class="rounded-lg p-6 m-4 lg:m-0 w-full xl:w-1/2 bg-white">
+                <div class="flex items-start justify-between">
+                    <h3 class="text-xl font-semibold text-primary-800">Survei Kepuasan Layanan Siapdol</h3>
+                    <button id="SurveyModal" type="button"
+                        class="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <form class="flex flex-col gap-y-4 my-4 max-h-72 overflow-y-auto" id="frmSurvey" method="post"
+                    action="<?= base_url('pbb/cetak_sppt/salinan') ?>">
+                    <input type="hidden" name="nama" id="nama_form">
+                    <input type="hidden" name="nik" id="nik_form">
+                    <input type="hidden" name="nop" id="nop_form">
+                    <input type="hidden" name="tahun_sppt" id="tahun_form">
+                    <input type="hidden" name="keperluan" id="keperluan_form">
+                    <input type="hidden" name="keterangan" id="keterangan_form">
+                    <input type="hidden" name="secutity_code" id="captcha_form">
+
+                    <input type="hidden" name="id" value="">
+                    <input type="hidden" name="kuis1" value="1">
+                    <input type="hidden" name="kuis2" value="2">
+                    <input type="hidden" name="kuis3" value="3">
+                    <div class="">
+                        <h6 class="text-base font-semibold text-gray-800"> 1. Apakah Prosedur Pelayanan Mudah Dipahami?
+                        </h6>
+                        <div class="mt-2 flex gap-2 flex-col">
+                            <label for="option1" class="flex items-center">
+                                <input type="radio" name="nilai1" value="1" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                    checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Tidak Mudah</span>
+                            </label>
+
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai1" value="2" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Kurang Mudah</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai1" value="3" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Mudah</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai1" value="4" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Sangat Mudah</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h6 class="text-base font-semibold text-gray-800"> 2. Kecepatan Waktu dalam memberikan Pelayanan
+                        </h6>
+                        <div class="mt-2 flex gap-2 flex-col">
+                            <label for="option1" class="flex items-center">
+                                <input type="radio" name="nilai2" value="1"
+                                    class="h-5 w-5 text-primary-600 focus:!ring-primary-600 checked:!bg-primary-600"
+                                    required>
+                                <span class="ml-2 text-gray-800">Tidak Cepat</span>
+                            </label>
+
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="2" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Kurang Cepat</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="3" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Cepat</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="4" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Sangat Cepat</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h6 class="text-base font-semibold text-gray-800"> 3. Perilaku Petugas Dalam Pelayanan terkait
+                            Kesopanan dan Keramahan
+                        </h6>
+                        <div class="mt-2 flex gap-2 flex-col">
+                            <label for="option1" class="flex items-center">
+                                <input type="radio" name="nilai2" value="1"
+                                    class="h-5 w-5 text-primary-600 focus:!ring-primary-600 checked:!bg-primary-600"
+                                    required>
+                                <span class="ml-2 text-gray-800">Tidak Sopan dan Tidak
+                                    Ramah</span>
+                            </label>
+
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="2" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Kurang Sopan dan Kurang
+                                    Ramah</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="3" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Sopan dan Ramah</span>
+                            </label>
+                            <label for="option2" class="flex items-center">
+                                <input type="radio" name="nilai2" value="4" class="h-5 w-5 text-primary-600 focus:!ring-primary-600
+                                            checked:!bg-primary-600" required>
+                                <span class="ml-2 text-gray-800">Sangat Sopan dan Sangat
+                                    Ramah</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn-primary w-full" type="submit">Kirim Survei</button>
             </div>
         </div>
         <!-- Modal Informasi PBB -->
@@ -860,6 +986,23 @@
         // Menambahkan event listener untuk menutup modal
         closeModalBtn.addEventListener('click', () => {
             modal.classList.add('hidden');
+        });
+    </script>
+    <!--Modal Survei Kepuasan SIAPDOL -->
+    <script>
+        // Mengambil elemen-elemen modal dan tombol
+        const openModalBtnSurvey = document.getElementById('SurveyModal');
+        const closeModalBtnSurvey = document.getElementById('SurveyModal');
+        const modalSurvey = document.getElementById('SurveyModal');
+
+        // Menambahkan event listener untuk membuka modal
+        openModalBtnSurvey.addEventListener('click', () => {
+            modalSurvey.classList.remove('hidden');
+        });
+
+        // Menambahkan event listener untuk menutup modal
+        closeModalBtnSurvey.addEventListener('click', () => {
+            modalSurvey.classList.add('hidden');
         });
     </script>
 </body>
